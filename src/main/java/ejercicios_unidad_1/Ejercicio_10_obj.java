@@ -28,19 +28,18 @@ public class Ejercicio_10_obj {
 		
 		int limite = serie.getLimite();
 		
-		
-		
 		System.out.println();
-		System.out.print(serie.num_1 + ", ");
-		System.out.print(serie.num_2 + ", ");
+		System.out.print(serie.num_1);
+		System.out.print(", " + serie.num_2);
 		
 		while (serie.num_1 + serie.num_2 <= limite) {
 			serie.temp = serie.num_1;
 			serie.num_1 = serie.num_2;
 			serie.num_2 = serie.temp + serie.num_1;
-			System.out.print(serie.num_2 + ", ");
+			System.out.print(", " + serie.num_2);
 		}
-		
+		System.out.println(".");
+		System.out.println();
 		entrada.close();
 
 	}
@@ -61,5 +60,7 @@ class Fibonacci {
 	public int getLimite() {
 		return this.limite;
 	}
+
+	
 	
 }

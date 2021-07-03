@@ -27,7 +27,7 @@ public class Ejercicio_04 {
 		
 		
 		// Realizamos un for para multiplicar el numero dado por cada indice
-		for (int i = 0; i <= numero; i++) {
+		for (int i = 0; i <= 10; i++) {
 			System.out.println(numero + " x " + i + " = " + numero*i);
 		}
 

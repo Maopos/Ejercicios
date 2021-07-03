@@ -1,5 +1,13 @@
 package ejercicios_unidad_1;
 
+// Elaborado por Mauricio Posada Grupo P72
+/*
+2. Realizar un programa que realice el promedio de las notas de un alumno, para ello el programa va a tener
+que solicitar el nombre del alumno y las notas de las 3 evaluaciones. Si el alumno tiene un promedio mayor o 
+igual a 3.0 también debe imprimir “Aprobado”, si no alcanzó esa nota debe imprimir “Reprobado” . 
+Requisitos: Las notas que se ingresan pueden tener decimales.
+*/
+
 import java.util.Scanner;
 
 public class Ejercicio_02_obj {
@@ -74,9 +82,6 @@ class Alumno {
     }
 
     public float getPromedio(){
-        return (nota_01 + nota_02 + nota_03) / 3;
-    }
-    
-
-    
+        return promedio;
+    }    
 }
