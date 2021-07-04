@@ -21,6 +21,7 @@ public class Ejercicio_02_obj {
         String nombre = entrada.nextLine();
 
         Alumno alumno_01 = new Alumno(nombre);
+        
 
         System.out.print("Introduce Nota 1: ");
         float nota1 = entrada.nextFloat();
@@ -51,12 +52,12 @@ class Alumno {
     private float nota_03;
     private float promedio;
 
-    public Alumno(String nombre){
+    public Alumno(String nombre){ // Constructor
 
         this.nombre = nombre;
     }
 
-    public void setNota_1(float nota1) {
+    public void setNota_1(float nota1) { // Set - darle valor
         this.nota_01 = nota1;
     }
     public void setNota_2(float nota2) {
@@ -66,11 +67,9 @@ class Alumno {
         this.nota_03 = nota3;
     }
 
-    public float getNota1(){
-        return this.nota_01;
-    }
+    
 
-    public String getResult(){
+    public String getResult(){ // muestrame el resultado
         promedio = (nota_01 + nota_02 + nota_03) / 3;
         if (promedio >= 3) { // Construimos una condicional para verificar el estado final del alumno
 			return "\nEl alumno " + nombre + " fue 'Aprobado' con un promedio de: ";

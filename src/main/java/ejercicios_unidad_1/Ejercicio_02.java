@@ -41,16 +41,13 @@ public class Ejercicio_02 {
 		if (promedio >= 3) { // Construimos una condicional para verificar el estado final del alumno
 			System.out.print("\nEl alumno " + nombre + " fue 'Aprobado' con un promedio de: ");
 			System.out.printf("%.2f", promedio);
-			
-			
+				
 		} else {
 			System.out.print("\nEl alumno " + nombre + " fue 'Reprobado' con un promedio de: ");
 			System.out.printf("%.2f", promedio);
 			
 		}
-		
 		entrada.close();
-
 	}
 
 }
